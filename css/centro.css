@@ -191,16 +191,16 @@ h3 {
  
 }
 .video{
-  margin: 0;
-  width: 500px;
-  height: 600px;
+  margin: 10px;
+  width: 450px;
+  height: 500px;
   background: #929292;
   border-radius: 10px;
 }
 .video video{
   
-  width: 500px;
-  height: 600px;
+  width: 450px;
+  height: 500px;
   
 }
 .inscripciones__promos {
@@ -226,11 +226,11 @@ h3 {
   background-image: url(../imagenes/mko3.jpg);
   background-position: center;
   background-size: cover;
-  width: 500px;
-  margin: 100px;
+  width: 450px;
+  margin: 50px;
   padding: 10px 20px;
   border: 5px inset black;
-  height: 400px;
+  height: 500px;
   font-family: "Poppins", sans-serif;
 }
 .nombre__apellido input {
@@ -475,12 +475,13 @@ h3 {
     width: 400px;
     height: auto;
     margin: 20px;
+    display: flex;
     justify-content: flex-start;
   }
   .mapa {
-    width: 100%;
+    width: 400px;
     height: auto;
-    justify-content: flex-start;
+    align-items: flex-start;
   }
   .divubi {
     display: flex;
