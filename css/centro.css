@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+}
+body {
+  margin: 0%;
+}
+header {
+  background-color: #fcfcfc;
+  color: rgb(0, 0, 0);
+  width: 100%;
+}
+header img {
+  width: 100%;
+  height: 150px;
+}
+#btn-menu {
+  display: none;
+}
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+header label:hover {
+  cursor: pointer;
+}
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  font-family: "Shadows Into Light", cursive;
+  
+}
+.menu li {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.menu li:hover {
+  background-color: rgb(224, 14, 14);
+  box-shadow: 5px 10px 10px 2px #170709;
+  
+}
+.menu li a {
+  display: block;
+  padding: 20px 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  
+}
+@media (max-width: 768px) {
+  header label {
+    display: block;
+  }
+  header img {
+    height: 40%;
+  }
+  .menu {
+    position: absolute;
+    background:transparent;
+    width: 50%;
+    margin-left: -70%;
+    transition: all 1s;
+    
+  }
+  .menu ul {
+    
+    flex-direction: column;
+    border-radius: 0px;
+    
+  }
+  .menu li {
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+   
+    
+    
+  }
+.menu li a{
+  color: white;
+  font-size: 20px;
+  background: black;
+  border-radius: 10px;
+  }
+  .menu li a:hover {
+    background-color: rgb(224, 14, 14);
+    box-shadow: 5px 10px 10px 2px #555555;
+    color:black;
+    font-size:30px ;
+  }
+  
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+}
+
+h1 {
+  font-family: "Shadows Into Light", cursive;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: "Shadows Into Light", cursive;
+}
+h3 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+/*index*/
+.index__principal{
+  padding: 0;
+  background-image:url(//imagenes/logo\ titulo\ teamvaldez.jpg);
+}
+.index__div {
+  width: 100%;
+   margin: 0;
+  padding: 0;
+  background: black;
+  font-family: "Shadows Into Light", cursive;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  
+}
+
+.exterior {
+  padding: 10px;
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+.viajes {
+  background-color: rgb(54, 54, 54);
+  border: 2px solid red;
+  width: 300px;
+  color: white;
+  flex-flow: row wrap;
+}
+.viajes img {
+  width: 100%;
+}
+
+/*inscripciones__contactos*/
+
+#inscripcion__completo {
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+#inscripcion__completo h2 {
+  color: aliceblue;
+  font-size: 50px;
+  text-decoration: underline;
+}
+#inscripcion__completo h3 {
+  color: aliceblue;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/*inscripciones_formulario*/
+
+.inscripciones__completo {
+  margin: 20px;
+  padding: 10px;
+  width: 1400px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.inscripciones__1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.inscripciones__promos {
+  margin:10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  height:auto;
+}
+.inscripciones__promos img {
+  width: 100%;
+  height: 100%;
+  justify-content:space-evenly;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px 2px #2e2e2e;
+}
+.inscripciones__promos div :hover{
+  width: 450px;
+}
+
+
+
+.inscripciones__formulario {
+  color: rgb(255, 255, 255);
+  background-image: url(../imagenes/mko3.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  margin: 100px;
+  padding: 10px 20px;
+  border: 5px inset black;
+  height: 400px;
+  font-family: "Poppins", sans-serif;
+}
+.nombre__apellido input {
+  color: aliceblue;
+  transition: all 1s;
+}
+.nombre__apellido input:focus {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  width: 300px;
+  height: 20px;
+}
+.email__password input {
+  color: aliceblue;
+  transition: all 1s;
+}
+.email__password input:focus {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  width: 300px;
+  height: 20px;
+}
+/*protocolo*/
+.protocolo {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(138, 135, 135);
+  flex-direction: column;
+  letter-spacing: 2px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.protocolo h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_protocolo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+.img_protocolo img {
+  height: 500px;
+  width: 500px;
+  padding: 30px;
+}
+
+/*galeria*/
+
+#galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: auto;
+  gap: 15px;
+}
+#galeria div img {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  
+}
+#galeria div {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px 2px #7d0614;
+}
+#galeria div:hover {
+  width: 500px;
+}
+#galeria .foto2 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+#galeria .foto10 {
+  grid-column: 1/4;
+}
+#galeria .foto-6 {
+  grid-column: 1/4;
+}
+.titulo_galeria h1 {
+  margin: 2%;
+  height: 60px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: #626262;
+}
+
+@media screen and (max-width: 768px) {
+  #galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 768px;
+  }
+
+  #galeria div:hover {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #galeria {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+/*ubicacion*/
+.divubi {
+  height: 1900px;
+  width: 100%;
+  background-color: #0c0909;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.introubi {
+  color: aliceblue;
+  width: auto;
+  height: auto;
+  margin: 30px;
+}
+.introubi h3 {
+  margin: 30px;
+  padding: 5px;
+  font-size: 50px;
+}
+
+.introubi li {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#fontubi h2 {
+  font-size: 50px;
+  color: aliceblue;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#fontubi {
+  display: flex;
+  flex-direction: column;
+}
+#fontubi .fontubi__img {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+#fontubi .fontubi__img img {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  gap: 10px;
+  background-color: white;
+}
+
+.mapa iframe {
+  margin: 10px;
+  width: 500px;
+  height: 500px;
+
+  align-items: center;
+}
+.mapa {
+  margin: 30px;
+}
+.mapa:hover {
+  transform: scale(1.1);
+}
+.divubi.calles {
+  display: flex;
+  margin: 20px;
+  padding: 0;
+  flex-direction: column;
+}
+
+.img-direction {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  height: auto;
+}
+.img-direction img {
+  width: 100%;
+  filter: grayscale(1);
+}
+.img-direction img:hover {
+  filter: none;
+}
+
+.img-direction img:nth-child(2) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.colorp {
+  color: aqua;
+}
+@media (max-width: 768px) {
+  .mapa iframe {
+    width: 400px;
+    height: auto;
+    margin: 20px;
+    justify-content: flex-start;
+  }
+  .mapa {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+  }
+  .divubi {
+    display: flex;
+    flex-direction: column;
+    height: 2900px;
+  }
+}
+footer {
+  width: 100%;
+  position: flex;
+  justify-content: end;
+  color: aliceblue;
+  background-color: #7d0614;
+}
