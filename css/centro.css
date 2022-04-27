@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   background: #0c0909;
-  
 }
 
 header {
@@ -164,7 +163,6 @@ h3 {
   background-position:center  ;
   height:calc(100vh - 130px);
 
-
 }
 #centro{ 
   justify-content: center;
@@ -186,6 +184,18 @@ h3 {
   padding: 0;
   background-color:white;
 }
+#inscripcion__completo h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #555555;
+  background-color: #7d0614;
+  padding: 10px;
+  text-shadow: 5px 5px 5px #000000;
+  padding: 10px;
+}
+
 #inscripcion__completo {
   margin: 0;
   padding: 0;
@@ -202,6 +212,19 @@ h3 {
   color: aliceblue;
   font-size: 20px;
   text-decoration: underline;
+}
+.inscripciones__p{
+  text-align: center;
+  font-family:  "Poppins", sans-serif;
+  background-color: #7d0614;
+  color: white;
+  text-shadow: 5px 5px 5px #000000;
+ 
+}
+.inscripciones__p::first-letter{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+
 }
 
 /*inscripciones_formulario*/
@@ -367,66 +390,7 @@ h3 {
     
   }
 }
-/*galeria*/
-.conteiner{
-  height: 700px;
-  
-}
-#galeria {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: auto;
-  gap: 15px;
-}
-#galeria div img {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  
-}
-#galeria div {
-  transition: 0.3s ease-in-out;
-  box-shadow: 0px 0px 10px 2px #7d0614;
-}
-#galeria div:hover {
-  transform:scale(1.2);
-}
-#galeria .foto2 {
-  grid-column: 2/4;
-  grid-row: 2/4;
-}
-#galeria .foto10 {
-  grid-column: 1/4;
-}
-#galeria .foto-6 {
-  grid-column: 1/4;
-}
-.titulo_galeria h1 {
-  margin: 2%;
-  height: 60px;
-  font-size: 50px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  background: #626262;
-}
 
-@media screen and (max-width: 768px) {
-  #galeria {
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 768px;
-  }
-
-  #galeria div:hover {
-    transform: scale(1.2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  #galeria {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-}
 /*novedades*/
 
 .body_novedades{
@@ -488,6 +452,7 @@ h3 {
   justify-content: space-between;
   margin: 20px;
   background: #0c0909;
+  
 }
 
 .torneos_latino div{
@@ -527,13 +492,16 @@ h3 {
  
 }
 /*ubicacion*/
+
 .divubi {
   height: 1900px;
-  width: 100%;
+  width: 97%;
   background-color: #0c0909;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  margin: 20px;
 }
 .introubi {
   color: aliceblue;

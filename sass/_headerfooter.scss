@@ -1,9 +1,11 @@
+@import 'encomun';
 body{
     margin: 0;
     padding: 0;
+    
 
     header{
-        background-color: rgb(252, 252, 252);
+        background: #fff;
         color: rgb(0, 0, 0);
         width: 100%;
         img{
@@ -40,7 +42,7 @@ body{
                     font-size: 30px;
                     border-radius: 10px;
                     &:hover {
-                        background-color: rgb(224, 14, 14);
+                        background:map-get($map: $colesprin, $key: rojo);
                         box-shadow: 5px 10px 10px 2px #170709;
                     }
                     a{
@@ -86,10 +88,10 @@ body{
                         a{
                             color: white;
                             font-size: 20px;
-                            background: black;
+                            background:map-get($map: $colesprin, $key:negro );
                             border-radius: 10px;
                             &:hover {
-                                background-color: rgb(224, 14, 14);
+                                background: map-get($map: $colesprin, $key: rojo);
                                 box-shadow: 5px 10px 10px 2px #555555;
                                 color:black;
                                 font-size:30px ;
@@ -105,7 +107,7 @@ body{
         width: 100%;
         position: flex;
         color: aliceblue;
-        background-color: #7d0614;
+        background:map-get($map: $colesprin, $key: rojo);
         a{
             list-style: none;
             text-decoration: none;

@@ -1,13 +1,14 @@
 @import 'headerfooter';
+@import 'encomun';
 body{
-    background: black;
+    background:map-get($map: $colesprin, $key: negro);
 
     .titulo_galeria{
 
         h1{ 
             margin: 2%;
             height: 60px;
-            background: #626262;
+            background:map-get($map: $colesprin, $key: gris);
             text-align: center;
            font: {
                 size: 50px;
@@ -28,7 +29,10 @@ body{
             grid-row: 2/4;
         }
         .foto-6{
-            grid-column: 1/4; grid-column: 1/4;
+            grid-column: 1/4; 
+        }
+        .foto-8{
+            grid-column: 2/4;
         }
         .foto10{
             grid-column: 1/4;
@@ -47,7 +51,26 @@ body{
             }
         }
     }
-    
+    h2{
+        margin: 2%;
+        height: 60px;
+        background:map-get($map: $colesprin, $key: gris);
+        text-align: center;
+       font: {
+            size: 50px;
+            family: "Poppins", sans-serif;
+        }
+    }
+    .maquinas{
+        @extend #galeria;
+        .foto11{
+            @extend .foto2;
+        }
+        .foto-12{
+            @extend .foto-6;
+            height: 500px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -67,4 +90,4 @@ body{
       max-width: 1000px;
       margin: 0 auto;
     }
-  }
+}
