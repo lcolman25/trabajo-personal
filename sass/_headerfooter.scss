@@ -108,6 +108,9 @@ body{
         position: flex;
         color: aliceblue;
         background:map-get($map: $colesprin, $key: rojo);
+        #logo_footer{
+            color: #fff;
+        }
         a{
             list-style: none;
             text-decoration: none;
