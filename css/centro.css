@@ -187,13 +187,17 @@ h3 {
   font-family: 'Orbitron', sans-serif;
 }
 @media screen and (max-width: 768px) {
+  .titulo__index{
+    height: 450px;
+    width: 450px;
+  }
   .nav-item #a:hover{
     animation:alternate;
     transform:none;
     color: rgb(13, 217, 244);
   }
   .titulo__index div h1{
-    font-size: 45px;
+    font-size: 40px;
     color: #000000;
   }
   .titulo__index div p{
