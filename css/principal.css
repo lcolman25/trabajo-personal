@@ -113,6 +113,10 @@ body footer {
   background: #dc1313;
 }
 
+body footer #logo_footer {
+  color: #fff;
+}
+
 body footer a {
   list-style: none;
   text-decoration: none;
@@ -148,6 +152,8 @@ body #galeria .foto2, body .maquinas .foto2, body #galeria .maquinas .foto11, bo
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 body #galeria .foto-6, body .maquinas .foto-6, body #galeria .maquinas .foto-12, body .maquinas #galeria .foto-12, body .maquinas .foto-12 {
@@ -169,8 +175,6 @@ body #galeria .foto10, body .maquinas .foto10 {
 }
 
 body #galeria div, body .maquinas div {
-  -webkit-transform: 0.3s ease-in-out;
-          transform: 0.3s ease-in-out;
   -webkit-box-shadow: 0px 0px 10px 2px #7d0614;
           box-shadow: 0px 0px 10px 2px #7d0614;
 }
@@ -178,6 +182,8 @@ body #galeria div, body .maquinas div {
 body #galeria div:hover, body .maquinas div:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body #galeria div img, body .maquinas div img {
